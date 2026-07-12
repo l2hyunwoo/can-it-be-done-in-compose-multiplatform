@@ -1,7 +1,7 @@
 # Can it be done in Compose Multiplatform?
 
 A collection of graphics & animation demos rebuilt in **Compose Multiplatform**, inspired by
-the *"Can it be done in Jetpack Compose?"* series — but running on **Android, iOS, and Desktop**
+the ["Can it be done in React Native?"](https://youtube.com/playlist?list=PLkOyNuxGl9jxB_ARphTDoOWf5AE1J-x1r&si=k0127eYccOuFjPgR) series — but running on **Android, iOS, and Desktop**
 from a single Kotlin codebase (wasmJs added per-demo where the graphics APIs allow).
 
 Each demo is a **self-contained CMP project** in its own directory, so you can open, build, and
@@ -11,35 +11,16 @@ run any one of them independently.
 
 | Demo | Android | iOS | Desktop | wasmJs |
 |------|:-------:|:---:|:-------:|:------:|
-| [wave-loading](wave-loading/) — animated liquid wave fill | ✅ | ✅ | ✅ | — |
+| [rainy-window](rainy-window/)| ✅ | ✅ | ✅ | — |
 
-## Structure
+### Rainy Window
 
-```
-can-it-be-done-in-compose-multiplatform/
-├── README.md
-├── wave-loading/            # independent CMP project
-│   ├── composeApp/          # shared Compose code + Android/Desktop/wasm entrypoints
-│   ├── iosApp/              # Xcode project
-│   ├── settings.gradle.kts
-│   └── gradlew
-└── <next-demo>/             # same layout
-```
+<video src="https://github.com/user-attachments/assets/e4454093-d7c0-40db-a7c1-5740460d9e41" />
 
-## Running a demo
+## Credits
 
-```bash
-cd wave-loading
-
-# Desktop (fastest iteration loop)
-./gradlew :composeApp:run
-
-# Android (device/emulator connected)
-./gradlew :composeApp:installDebug
-
-# iOS — open iosApp/iosApp.xcodeproj in Xcode and run
-```
-
-## Versions
-
-Kotlin `2.4.0` · Compose Multiplatform `1.11.1` · AGP `9.2.1` · JDK 17+.
+**rainy-window** — the raindrop field is an AGSL/SKSL port of **"Heartfelt"** by
+Martijn Steinrucken (BigWings), <https://www.shadertoy.com/view/ltffzl>, licensed
+**CC BY-NC-SA 3.0**. The ported shader — and therefore that demo — is
+**non-commercial** and **share-alike** under the same license. Do not use it
+commercially. The rainy-night background photo is provided by the repo author.

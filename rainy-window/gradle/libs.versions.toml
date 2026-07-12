@@ -1,0 +1,28 @@
+[versions]
+agp = "9.2.1"
+kotlin = "2.4.0"
+composeMultiplatform = "1.11.1"
+# material3 resolves independently of the core Compose MP version; pinned so the accessor
+# doesn't silently bump it (compose-gradle-plugin 1.11.1 ships material3 1.9.0).
+composeMaterial3 = "1.9.0"
+androidxActivity = "1.13.0"
+cloudy = "0.7.1"
+compileSdk = "37"
+minSdk = "24"
+targetSdk = "37"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+[libraries]
+compose-runtime = { group = "org.jetbrains.compose.runtime", name = "runtime", version.ref = "composeMultiplatform" }
+compose-foundation = { group = "org.jetbrains.compose.foundation", name = "foundation", version.ref = "composeMultiplatform" }
+compose-ui = { group = "org.jetbrains.compose.ui", name = "ui", version.ref = "composeMultiplatform" }
+compose-material3 = { group = "org.jetbrains.compose.material3", name = "material3", version.ref = "composeMaterial3" }
+compose-resources = { group = "org.jetbrains.compose.components", name = "components-resources", version.ref = "composeMultiplatform" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+cloudy = { group = "com.github.skydoves", name = "cloudy", version.ref = "cloudy" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
