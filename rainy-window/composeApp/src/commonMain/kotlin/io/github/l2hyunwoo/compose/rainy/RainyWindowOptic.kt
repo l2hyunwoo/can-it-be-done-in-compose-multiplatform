@@ -7,17 +7,17 @@
 package io.github.l2hyunwoo.compose.rainy
 
 import androidx.compose.ui.graphics.TileMode
-import com.skydoves.cloudy.CompositeOptic
+import com.skydoves.cloudy.CompositeShader
 import com.skydoves.cloudy.MirageParams
-import com.skydoves.cloudy.Optic
+import com.skydoves.cloudy.MirageShader
 import com.skydoves.cloudy.UFloat
 import com.skydoves.cloudy.UTexture
 
 /** Rain on steamed glass: running refracting raindrops + condensation you wipe clear with a finger. */
 public object RainyWindowOptic {
 
-  /** The rainy-window composite optic. Full-bleed by design. */
-  public val RainyWindow: CompositeOptic<RainyWindowParams> = Optic.composite(
+  /** The rainy-window composite shader. Full-bleed by design. */
+  public val RainyWindow: CompositeShader<RainyWindowParams> = MirageShader.composite(
     name = "rainyWindow",
     paramsFactory = ::RainyWindowParams,
     agsl = RAINY_WINDOW_KERNEL,
