@@ -6,7 +6,7 @@ composeMultiplatform = "1.11.1"
 # doesn't silently bump it (compose-gradle-plugin 1.11.1 ships material3 1.9.0).
 composeMaterial3 = "1.9.0"
 androidxActivity = "1.13.0"
-cloudy = "0.7.1"
+cloudy = "0.7.2-SNAPSHOT"
 compileSdk = "37"
 minSdk = "24"
 targetSdk = "37"
