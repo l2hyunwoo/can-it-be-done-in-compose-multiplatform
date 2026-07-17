@@ -12,10 +12,25 @@ run any one of them independently.
 | Demo | Android | iOS | Desktop | wasmJs |
 |------|:-------:|:---:|:-------:|:------:|
 | [rainy-window](rainy-window/)| ✅ | ✅ | ✅ | — |
+| [morphing-search-textfield](morphing-search-textfield/)| ✅ | ✅ | ✅ | — |
 
 ### Rainy Window
 
-<video src="https://github.com/user-attachments/assets/e4454093-d7c0-40db-a7c1-5740460d9e41" />
+https://github.com/user-attachments/assets/e4454093-d7c0-40db-a7c1-5740460d9e41
+
+### Morphing Search TextField
+
+#### Android
+
+https://github.com/user-attachments/assets/f448d0b7-12f2-4401-8c2f-341b298b31df
+
+#### iOS
+
+https://github.com/user-attachments/assets/878af5bd-d9bd-4ee2-80e9-d8f423fd6ba3
+
+#### Desktop
+
+https://github.com/user-attachments/assets/dea59a08-435f-483f-8a59-ac6940829f9d
 
 ## Credits
 
